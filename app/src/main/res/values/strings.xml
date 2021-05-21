@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fantasy Sports League</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="Team_details">Team_details</string>
+    <string name="tab_text_1">Batter</string>
+    <string name="tab_text_2">Bowler</string>
+    <string name="tab_text_3">All-Rounder</string>
+    <string name="spinner_title">1</string>
+</resources>

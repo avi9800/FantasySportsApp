@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#142652"
+    tools:context=".Profile_maker">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative1"
+        android:layout_above="@+id/dummy">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10dp"
+            android:src="@drawable/cricket_logo"
+            android:layout_centerInParent="true"
+            app:civ_shadow_color="#3f51b5"
+            android:id="@+id/profile_image"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dummy"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative2"
+        android:layout_below="@+id/dummy">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="Avishek Das"
+            android:id="@+id/username"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/username"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text="12345"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView3"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:id="@+id/password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Playing"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:background="#142652"
+            android:id="@+id/submit"/>
+    </RelativeLayout>
+
+
+    
+
+</RelativeLayout>

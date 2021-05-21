@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivities.Enter_contest">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="7dp"
+    android:id="@+id/contest_details"
+    android:layout_margin="7dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/cricket_background"
+            android:id="@+id/match_symbol"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ODI"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/match_symbol"
+            android:id="@+id/match_name"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/coins"
+            android:layout_margin="5dp"
+            android:id="@+id/x"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coins to be charged"
+            android:layout_toLeftOf="@+id/x"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/match_details_layout"
+            android:layout_below="@+id/match_name"
+            android:layout_above="@+id/match_winner_details">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="1">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="51000"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/total_prize"
+                            />
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/coins"
+                            android:layout_toRightOf="@+id/total_prize"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="2">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2000"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/total_winners"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="3">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/no_of_players_playing"
+                            />
+                    </RelativeLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="1">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL PRIZE"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="2">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WINNERS"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="3">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PLAYING"
+                            />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/match_winner_details"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="35dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/join_match"
+                android:text="join"
+                android:background="#FD6A02"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Create_team_button"
+                android:textSize="12sp"
+                android:text="Create Team"
+                android:background="@color/appcolor"
+                android:layout_toLeftOf="@+id/join_match"
+                android:textColor="@color/colorWhite"
+                />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/Create_team_button">
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="1">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:id="@+id/first_winner_prize_money"
+                         />
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/coins"
+                            android:layout_toRightOf="@+id/first_winner_prize_money"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="2">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500"
+                            android:id="@+id/second_winner_prize_money" />
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_toRightOf="@+id/second_winner_prize_money"
+                            android:src="@drawable/coins"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_column="3">
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="400"
+                            android:id="@+id/third_winner_prize_money" />
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/coins"
+                            android:layout_toRightOf="@+id/third_winner_prize_money"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            />
+                    </RelativeLayout>
+
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:autoSizeMaxTextSize="10dp"
+                        android:text="1st prize"
+                        android:layout_column="1"/>
+                    <TextView android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="2nd prize"
+                        android:textSize="10dp"
+                        android:autoSizeMaxTextSize="10dp"
+                        android:layout_column="1"/>
+                    <TextView android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="3rd prize"
+                        android:textSize="10dp"
+                        android:autoSizeMaxTextSize="10dp"
+                        android:layout_column="1"/>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

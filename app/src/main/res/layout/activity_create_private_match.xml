@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_cricket_image"
+    android:layout_height="match_parent"
+    tools:context=".MainActivities.Create_private_match">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/xyz"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#29000000"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Match Category"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="30sp"
+                    android:fontFamily="cursive"
+                    android:id="@+id/match_category"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/match_category"
+                    android:layout_marginTop="7dp"
+                    android:layout_above="@+id/current_user_creating_match"
+                    android:layout_toLeftOf="@+id/ab">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="No of players- "
+                        android:layout_alignParentLeft="true"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="cursive"
+                        android:layout_toLeftOf="@+id/no_of_players_spinner"/>
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/colorWhite"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/no_of_players_spinner"
+                        android:layout_below="@+id/code_for_joining"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_height="30dp"
+                    android:layout_width="150dp"
+                    android:id="@+id/ab"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_alignParentRight="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Code to join"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:id="@+id/code_to_send_others_to_join"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current User"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="cursive"
+                    android:id="@+id/current_user_creating_match"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/xyz">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview_of_create_match"/>
+    </RelativeLayout>
+
+</RelativeLayout>
